@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BloxEra — Instant Delivery Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="BloxEra — Instant delivery of game items and digital content." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/logo.jpg" alt="BloxEra logo" class="logo" />
+        <h1>BloxEra</h1>
+      </div>
+      <nav class="nav">
+        <a href="#store">Store</a>
+        <a href="#how">How it works</a>
+        <a href="#support">Support</a>
+        <a href="#contact" class="btn-primary">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h2>Instant delivery for game items & digital packs</h2>
+          <p class="lead">Secure downloads, fast email delivery, built for gamers. Try our safe and easy checkout.</p>
+          <a href="#store" class="cta">Shop Now</a>
+        </div>
+        <div class="hero-illus">
+          <img src="assets/logo.jpg" alt="BloxEra" />
+        </div>
+      </div>
+    </section>
+
+    <section id="store" class="container store-section">
+      <h3>Featured Products</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"></div>
+          <h4>100 Game Credits</h4>
+          <p class="muted">Instantly delivered to your account.</p>
+          <div class="card-footer">
+            <div class="price">$4.99</div>
+            <button class="buy-btn" data-id="p1">Buy</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"></div>
+          <h4>Premium Skin Pack</h4>
+          <p class="muted">Zip file with exclusive skins.</p>
+          <div class="card-footer">
+            <div class="price">$12.99</div>
+            <button class="buy-btn" data-id="p2">Buy</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"></div>
+          <h4>Exclusive Hat</h4>
+          <p class="muted">Limited edition cosmetic item.</p>
+          <div class="card-footer">
+            <div class="price">$2.49</div>
+            <button class="buy-btn" data-id="p3">Buy</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" class="container how-section">
+      <h3>How it works</h3>
+      <ol class="how-list">
+        <li>Select a product and enter your email</li>
+        <li>Complete secure checkout (Stripe)</li>
+        <li>Receive a secure download link by email</li>
+      </ol>
+    </section>
+
+    <section id="support" class="container support-section">
+      <h3>Need help?</h3>
+      <p>Check our <a href="#contact">support</a> or join our Discord for live help.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 BloxEra — All rights reserved.</div>
+      <div class="small muted">Use of platform items must follow game platform rules. We do not sell platform currencies off-platform.</div>
+    </div>
+  </footer>
+
+  <div id="checkout-modal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close">×</button>
+      <h3>Buy product</h3>
+      <p id="product-title"></p>
+      <form id="buy-form">
+        <label>Email for delivery
+          <input type="email" id="buyer-email" required placeholder="you@example.com" />
+        </label>
+        <button type="submit" class="btn-primary">Proceed to Checkout</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
